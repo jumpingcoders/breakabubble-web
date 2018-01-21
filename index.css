@@ -57,28 +57,48 @@ button, .button, input[type="submit"] {
     margin: 5px;
     font-family: 'Grand Hotel', cursive; }
 
+.box {
+  margin: 0;
+  padding: 10px; }
+  .box h2 {
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4rem; }
+    .box h2 .subtitle {
+      font-size: 1rem; }
+  .box a.logo, .box a.logobubble {
+    display: inline-block;
+    font-size: 30px;
+    margin: 5px; }
+    .box a.logo img, .box a.logobubble img {
+      width: 50px;
+      height: 50px; }
+    .box a.logo:hover img, .box a.logobubble:hover img {
+      transform: scale(1.1, 1.1); }
+  .box a.logobubble img {
+    border-radius: 50px; }
+
 .contacts {
-  height: 70px; }
-  .contacts .inner {
-    background-color: rgba(0, 0, 0, 0.78);
-    width: 100%;
-    position: absolute;
-    bottom: 0; }
-    .contacts .inner a {
-      display: inline-block;
-      font-size: 30px;
-      margin: 10px;
-      /*&:hover{
-        color: #3d64ff;
-      }*/ }
-      .contacts .inner a img {
-        width: 50px; }
+  background-color: rgba(0, 0, 0, 0.78); }
+
+.events {
+  background-color: rgba(40, 59, 64, 0.78); }
+  .events ul {
+    margin: 10px;
+    padding: 0; }
+    .events ul li {
+      list-style: none; }
+      .events ul li b {
+        padding: 8px; }
+
+.authors {
+  background-color: rgba(0, 0, 0, 0.78); }
 
 .card {
   position: absolute;
-  top: 50vh;
+  top: 20vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   width: 504px;
   min-height: 280px;
@@ -88,7 +108,7 @@ button, .button, input[type="submit"] {
 
 @media screen and (max-width: 520px), screen and (max-height: 500px) {
   .card {
-    top: 130px;
+    top: 150px;
     left: 0px;
     width: 100vw;
     min-height: calc( 100vh - 130px);
