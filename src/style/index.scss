@@ -1,11 +1,13 @@
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #000000;
   margin: 0px;
   padding: 0px;
 
   background: url('./images/textures/norwegian_rose.png');
   background-position: center;
+
+
 }
 
 
@@ -16,13 +18,13 @@ body {
 
 a {
 
-  text-decoration: none;
+  //text-decoration: none;
   color: inherit;
   outline: 0;
   cursor: Pointer;
 
   &:hover{
-    color: #3d64ff;
+    color: #fff8ac;
   }
 
 }

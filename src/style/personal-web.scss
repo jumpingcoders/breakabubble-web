@@ -2,7 +2,7 @@
 .card {
 
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -11,10 +11,12 @@
   //border-radius: 30px;
 
   width: 504px;
-  height: 280px;
-  background-color: #ffffff;
+  min-height: 280px;
+  background-color: #ff4d56;
 
   text-align: center;
+
+  color: white;
 
 }
 
