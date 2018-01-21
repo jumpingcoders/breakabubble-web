@@ -1,6 +1,5 @@
-@charset "UTF-8";
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #000000;
   margin: 0px;
   padding: 0px;
@@ -11,12 +10,11 @@ body {
   transition: all .3s ease-out; }
 
 a {
-  text-decoration: none;
   color: inherit;
   outline: 0;
   cursor: Pointer; }
   a:hover {
-    color: #3d64ff; }
+    color: #fff8ac; }
 
 button, .button, input[type="submit"] {
   display: inline-block;
@@ -40,7 +38,9 @@ button, .button, input[type="submit"] {
   display: inline-block;
   text-align: center;
   background-color: transparent;
-  padding: 0px;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px; }
   .about .avatar {
     height: 40px; }
@@ -52,29 +52,15 @@ button, .button, input[type="submit"] {
       width: 150px;
       max-width: 80%;
       /*border: 2px solid #000000;*/ }
-  .about .name {
-    display: block;
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 10px; }
-  .about .subname {
-    display: block;
-    /*&:not(:last-child):after {
-      display: inline-block;
-      width: 30px;
-      content: "";//•
-    }*/
-    font-size: 1.4em; }
-    .about .subname img {
-      display: inline-block;
-      margin-left: 4px;
-      vertical-align: bottom;
-      height: 1em; }
+  .about h1 {
+    font-size: 2.3rem;
+    margin: 5px;
+    font-family: 'Grand Hotel', cursive; }
 
 .contacts {
   height: 70px; }
   .contacts .inner {
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.78);
     width: 100%;
     position: absolute;
     bottom: 0; }
@@ -90,14 +76,15 @@ button, .button, input[type="submit"] {
 
 .card {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   width: 504px;
-  height: 280px;
-  background-color: #ffffff;
-  text-align: center; }
+  min-height: 280px;
+  background-color: #ff4d56;
+  text-align: center;
+  color: white; }
 
 @media screen and (max-width: 520px), screen and (max-height: 500px) {
   .card {
