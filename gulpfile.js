@@ -111,7 +111,7 @@ gulp.task('deploy', (done) => {
 
 
     ghpages.publish('dist', {
-        repo: 'https://github.com/hejny/pavolhejny.git'
+        repo: 'https://github.com/jumpingcoders/breakabubble-web'
     }, () => {
         console.log(arguments);
         done();
